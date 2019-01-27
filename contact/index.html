@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!--HEAD-->
+<head>
+<meta charset="utf-8"/>
+<title>MASTERMIND</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link rel="stylesheet" href="src/css/style.css" type="text/css">  <!--chargement du css-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+crossorigin=""></script>
+</head>
+<!--FIN HEAD-->
+
+<!--BODY-->
+<body>
+
+ <!--HEADER--> 
+<header class="header">
+<img src="src/img/home/logo.png" alt="logo">
+</header>
+
+<!--FIN HEADER-->
+
+<!--NAV-MENU-->
+<div class="background">
+<nav>
+  <label for="menu-mobile" class="menu-mobile">Menu</label>
+  <input type="checkbox" id="menu-mobile" role="button">
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a>
+        <ul class="submenu">
+          <li><a href="#">Our</a></li>
+          <li><a href="#">Yours</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contacts</a></li>
+  </ul>
+</nav><br>
+</div>
+<!--FIN NAV-MENU-->
+
+<!--CONTAINER-->
+<section class="container">
+
+  <article>
+  <h1 class="title1">Contact us</h1>
+  <p>Use this form to contact us.
+Please note that all fields with an * are required.</p>
+
+<!--FORMULAIRE-->
+<form id="form" method="post" action="#">
+  
+<label for="name">Name <span>*</span></label>
+
+<input type="text" id="name"/><br>
+
+
+<label for="email">Email <span>*</span></label>
+
+<input  type="email" id="email"><br>
+
+
+<label for="tel">Phone</label>
+<input type="tel" id="tel"><br>
+
+
+<label for="msg">Message <span>*</span></label>
+
+<textarea name="name" rows="8" cols="22"></textarea><br><br>
+
+
+</form>
+<button class="button-is-link">Send</button>
+<!--FIN FORMULAIRE-->
+
+</article>
+
+<!--MAP-->
+  <section class="aside-container">
+  <aside></aside>
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d167981.67951227093!2d2.2214706804687623!3d48.86366878890958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1548594675915" width="50" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <script src="src/js/map.js"></script>
+<!--FIN MAP-->
+  <div class="address">
+
+                  <address>
+                              <h1>US HEADQUARTERS</h1>
+                           4000 Civic Center Drive<br>
+                           Suite 500<br> San Rafael, CA 94903<br>
+                           USA.<br>
+                               <a href="tel:+44(0)845 299 8199">Phone +44(0)845 299 8199</a>
+                 </address>
+
+
+                   <address>
+                           <h1>UK OFFICES</h1>
+                           1 Sekforde Street, Clerkenwell<br>, London, EC1R 0BE.<br>,
+                           United Kingdom<br><br>
+                            <a href="tel:+44(0)845 299 8199">Phone +44(0)845 299 8199</a>
+                  </address>
+           </div>
+         </section>
+</section>
+<!--FIN CONTAINER-->
+
+<!--CONTAINER 2-->
+<section class="container2">
+<main class="main-container2">
+<div>
+<h1 class="title2">Our team leaders</h1>
+<p>Get your mouse over the pictures to know more about our team leaders.
+</p>
+</div>
+<section class="team">
+<article class="content-team">
+<img src="src/img/contacts/team1_2.png" alt="team1">
+<div class="flottant">Chandler Vancova,<br> Marketing Coordinator</div>
+</article>
+
+<article class="content-team">
+<img src="src/img/contacts/team2.png" alt="team2">
+<div class="flottant">Diane Marvin,<br> Human Resources</div>
+</article>
+
+<article class="content-team">
+<img src="src/img/contacts/team3.png" alt="team3">
+<div class="flottant">Patrick Pool,<br> Business Development</div>
+</article>
+
+<article class="content-team">
+<img src="src/img/contacts/team4.png" alt="team4">
+<div class="flottant">Alise Puse,<br> Banking Consultant</div>
+</article>
+
+<article class="content-team">
+<img src="src/img/contacts/team5.png" alt="team5">
+<div class="flottant">Mark Johnson,<br> Business Analyst</div>
+</article>
+
+<article>
+<img src="src/img/contacts/team6.png" alt="team6">
+<div class="flottant">Bradley Grosh,<br> Commercial Manager</div>
+</article>
+
+
+</section>
+</main>
+</section>
+<!--FIN CONTAINER 2-->
+
+<!--FOOTER-->
+    <footer class="footer-section">
+      <section class="footer-section1">
+        <small>MasterMind @ 2018 <br><span>Privacy Policy</span></small>
+      </section>
+      <section class="footer-section2">
+        <form>
+          <div class="fomulaire">
+            <label for="formal">Subscribe to our newsletters: <br></label>
+            <input type="text" id="formal1" required size="15"
+            placeholder="your email address"
+            minlength="10" maxlength="20">
+            <span class="validity"></span>
+          </div>
+          <section class="footer-section3">
+            <button class="button-is-link2">OK</button>
+          </section>
+        </section>
+        <aside class="footer-section4">
+          <i class="fas fa-envelope"></i>
+          <i class="fa fa-rss"></i>
+          <i class="fab fa-twitter"></i>
+        </aside>
+      </footer>
+      
+      <!--FOOTER-->
+</body>
+<!--FIN BODY-->
+</html>
